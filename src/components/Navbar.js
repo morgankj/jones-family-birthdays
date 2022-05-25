@@ -1,11 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-import logo from '../images/cakelogo.png';
 import mainLogo from '../images/mainLogo.png';
 
 export default function Navbar() {
   return (
-    <StyledNavbar>
+    <StyledNavbar className="navbar">
         <a href="/" className="navLogo">
             <img alt="pink birthday cake jones family" src={mainLogo} />
         </a>
@@ -23,8 +22,7 @@ export default function Navbar() {
 }
 
 const StyledNavbar = styled.div
-`   background: #355070;
-    display: flex;
+`   display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;

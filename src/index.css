@@ -52,3 +52,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Other */
+.navbar, footer {
+	background: #355070;
+}
+
+.App {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+  }
