@@ -11,4 +11,6 @@ const StyledFooter = styled.footer
 `   display: flex;
     justify-content: center;
     color: white;
+    padding: .5rem 0;
+    font-size: 1.2rem;
 `
