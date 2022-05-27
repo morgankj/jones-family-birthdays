@@ -1,5 +1,6 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import mainLogo from '../images/mainLogo.png';
 
 export default function Navbar() {
@@ -9,12 +10,12 @@ export default function Navbar() {
             <img alt="pink birthday cake jones family" src={mainLogo} />
         </a>
         <nav>
-            <ol>
-                <li><a href="/" >Home</a></li>
-                <li><a href="/" >Birthdays</a></li>
-                <li><a href="/" >About</a></li>
-                <li><a href="/" >NAV4</a></li>
-            </ol>
+            <ul>
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/dates" >Dates</Link></li>
+                <li><Link to="/about" >About</Link></li>
+                <li><Link to="/" >NAV4</Link></li>
+            </ul>
         </nav>
         <div className="account">LOGIN</div>
     </StyledNavbar>
@@ -33,11 +34,11 @@ const StyledNavbar = styled.div
         color: white;
     }
     
-    .navLogo, ol {
+    .navLogo, ul {
         display: flex;
     }
 
-    ol {
+    ul {
         justify-content: space-between;
     }
 
