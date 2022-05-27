@@ -68,3 +68,33 @@ table {
 	flex-direction: column;
 	justify-content: space-between;
   }
+
+.bannerImage {
+	display: flex;
+	height: 60vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.koulen {
+	font-family: 'Koulen', cursive;
+}
+
+.bannerImage h1 {
+	font-size: 8rem;
+	color: white;
+	filter: drop-shadow(0 0 0.5rem black);
+}
+
+.flex {
+	display: flex;
+}
+
+.middle {
+	text-align: center;
+	margin: 2rem;
+}

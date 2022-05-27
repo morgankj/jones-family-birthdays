@@ -28,6 +28,7 @@ const StyledNavbar = styled.div
     padding: 1rem;
     align-items: center;
     color: white;
+    filter: drop-shadow(0 0 0.2rem black);
     
     a {
         text-decoration: none;
