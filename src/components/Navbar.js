@@ -17,7 +17,9 @@ export default function Navbar() {
                 <li><Link to="/" >NAV4</Link></li>
             </ul>
         </nav>
-        <div className="account">LOGIN</div>
+        <div className="account">
+            <Link to="/register" >LOGIN</Link>
+        </div>
     </StyledNavbar>
   );
 }
@@ -51,11 +53,11 @@ const StyledNavbar = styled.div
         height: 3.5rem;
     }
 
-    li a:hover {
+    a:hover {
         color: #EAAC8B;
     }
 
-    img:hover, li:hover {
+    img:hover, a:hover {
         position: relative;
         top: -1.5px;
         filter: drop-shadow(0 0 0.5rem black);
